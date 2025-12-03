@@ -4,12 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contact & Resume — CHLOE KIETH B. MENDOZA</title>
+  <!-- External stylesheet for consistent design -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- ===== HEADER & NAVIGATION ===== -->
   <header>
     <nav class="site-nav">
+      <!-- Logo / site title -->
       <a class="logo" href="index.html">CHLOE KIETH B. MENDOZA</a>
+      <!-- Navigation links -->
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="projects.html">Projects</a></li>
@@ -18,37 +22,48 @@
     </nav>
   </header>
 
+  <!-- ===== MAIN CONTENT ===== -->
   <main>
     <section class="container contact-layout">
+      
+      <!-- === CONTACT FORM SECTION === -->
       <section class="contact-form">
         <h1>Contact me</h1>
         <p class="subtitle">The form is styled but non-functional, as required.</p>
 
+        <!-- Contact form (non-functional, styled only) -->
         <form action="#" method="post">
           <fieldset>
             <legend>Send a message</legend>
-            <label for="name">Name</label>
-            <input id="name" name="name" type="text" placeholder=" ENTER YOUR NAME" required />
 
+            <!-- Name input -->
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="ENTER YOUR NAME" required />
+
+            <!-- Email input -->
             <label for="email">Email</label>
             <input id="email" name="email" type="email" placeholder="ENTER YOUR EMAIL" required />
 
+            <!-- Message textarea -->
             <label for="message">Message</label>
             <textarea id="message" name="message" rows="5" placeholder="How can I help?" required></textarea>
 
+            <!-- Disabled submit button -->
             <button class="btn" type="submit" disabled aria-disabled="true">Submit (disabled)</button>
           </fieldset>
         </form>
       </section>
 
+      <!-- === RESUME SECTION === -->
       <aside class="resume">
         <h2>Resume</h2>
 
+        <!-- Education -->
         <section>
           <h3>Education</h3>
           <article>
             <h4>BSCS, Section 1A</h4>
-            <p>CAMIRENES SUR POLYTHECNIC COLLEGE, NABUA, Philippines • Expected Graduation: 2028</p>
+            <p>CAMARINES SUR POLYTECHNIC COLLEGES, NABUA, Philippines • Expected Graduation: 2028</p>
             <ul>
               <li>Foundations: Programming, Linear Algebra, Humanities</li>
               <li>Learning methods: infosheets, video lessons, structured research</li>
@@ -56,25 +71,27 @@
           </article>
         </section>
 
+        <!-- Skills -->
         <section>
           <h3>Skills</h3>
           <ul class="skills">
             <li>Python (modules, error handling, CLI tools)</li>
             <li>HTML, CSS (Flexbox & Grid, responsive design)</li>
-            <li>Linear Algebra (3D TRANSFORMATION')</li>
+            <li>Linear Algebra (3D Transformation)</li>
             <li>Presentation design and visual communication</li>
           </ul>
         </section>
 
+        <!-- Experience & Projects -->
         <section>
-          <h3>Experience & projects</h3>
+          <h3>Experience & Projects</h3>
           <article>
             <h4>Student Account Mini-Machine</h4>
             <p>Designed modular data structures, resolved infinite loops with clear stopping conditions.</p>
           </article>
           <article>
-            <h4>3D TRANSFORMATION OF DICEWITHINDICE</h4>
-            <p>Produced a 3D Transformation of DICEWITHINDICE showing a rotation,reflection,scaling and translation .</p>
+            <h4>3D Transformation of DiceWithinDice</h4>
+            <p>Produced a 3D Transformation showing rotation, reflection, scaling, and translation.</p>
           </article>
           <article>
             <h4>Advocacy Poster Series</h4>
@@ -85,9 +102,10 @@
     </section>
   </main>
 
+  <!-- ===== FOOTER ===== -->
   <footer>
     <section class="container">
-      <p>&copy; 2025 CHLOE KIETH B. MENDOZA, All rights reserved.</p>
+      <p>&copy; 2025 CHLOE KIETH B. MENDOZA. All rights reserved.</p>
     </section>
   </footer>
 </body>
