@@ -25,6 +25,7 @@ html, body {
   line-height: 1.6;
 }
 
+
 img { max-width: 100%; display: block; border-radius: var(--radius); }
 a { color: var(--primary); text-decoration: none; }
 a:hover { color: var(--accent); }
@@ -61,7 +62,10 @@ header {
   color: var(--accent);
   border-bottom: 2px solid var(--accent);
 }
-
+nav.site-nav a:hover {
+  color: #0077cc;
+  text-decoration: underline;
+}
 /* Buttons */
 .btn {
   display: inline-block;
@@ -77,6 +81,19 @@ header {
   background: transparent; color: var(--text); border: 1px solid var(--border);
 }
 .btn-secondary:hover { border-color: var(--accent); color: var(--accent); }
+.btn {
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  padding: 0.75em 1.5em;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #005fa3;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
 
 /* Hero layout (Home) */
 .hero {
@@ -125,7 +142,27 @@ header {
   gap: 2rem;
   padding: 1rem 0 2rem;
 }
+.contact-info li {
+  transition: all 0.3s ease;
+}
 
+.contact-info li:hover {
+  color: #0077cc;
+  transform: translateX(5px);
+}
+.contact-layout {
+  display: flex;
+  gap: 2rem;          /* space between resume and contact */
+  align-items: flex-start;
+}
+
+.resume {
+  flex: 1;            /* takes left side */
+}
+
+.contact-form {
+  flex: 1;            /* takes right side */
+}
 .contact-form form {
   background: var(--card);
   border: 1px solid var(--border);

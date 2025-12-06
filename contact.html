@@ -4,16 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contact & Resume — CHLOE KIETH B. MENDOZA</title>
-  <!-- External stylesheet for consistent design -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <!-- ===== HEADER & NAVIGATION ===== -->
   <header>
     <nav class="site-nav">
-      <!-- Logo / site title -->
       <a class="logo" href="index.html">CHLOE KIETH B. MENDOZA</a>
-      <!-- Navigation links -->
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="projects.html">Projects</a></li>
@@ -26,50 +23,9 @@
   <main>
     <section class="container contact-layout">
       
-      <!-- === CONTACT FORM SECTION === -->
-      <section class="contact-form">
-        <!-- === DIRECT CONTACT INFO SECTION === -->
-<section class="contact-info">
-  <h2>Get in Touch</h2>
-  <p>If you have any questions or want to work together, feel free to contact me. I'm always open to new opportunities and collaborations.</p>
-  
-  <ul>
-    <li><span class="icon">📧</span> <a href="mendozachloe@gmail.com">mendozachloe@gmail.com</a></li>
-    <li><span class="icon">📍</span> Libon, Albay, Philippines</li>
-    <li><span class="icon">👤</span> Chloe Kieth B. Mendoza</li>
-  </ul>
-</section>
-        <h1>Contact me</h1>
-        <p class="subtitle">The form is styled but non-functional, as required.</p>
-
-        <!-- Contact form (non-functional, styled only) -->
-        <form action="#" method="post">
-          <fieldset>
-            <legend>Send a message</legend>
-
-            <!-- Name input -->
-            <label for="name">Name</label>
-            <input id="name" name="name" type="text" placeholder="ENTER YOUR NAME" required />
-
-            <!-- Email input -->
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" placeholder="ENTER YOUR EMAIL" required />
-
-            <!-- Message textarea -->
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" placeholder="How can I help?" required></textarea>
-
-            <!-- Disabled submit button -->
-            <button class="btn" type="submit" disabled aria-disabled="true">Submit (disabled)</button>
-          </fieldset>
-        </form>
-      </section>
-
-      <!-- === RESUME SECTION === -->
+      <!-- === RESUME SECTION (LEFT) === -->
       <aside class="resume">
         <h2>Resume</h2>
-
-        <!-- Education -->
         <section>
           <h3>Education</h3>
           <article>
@@ -82,7 +38,6 @@
           </article>
         </section>
 
-        <!-- Skills -->
         <section>
           <h3>Skills</h3>
           <ul class="skills">
@@ -93,7 +48,6 @@
           </ul>
         </section>
 
-        <!-- Experience & Projects -->
         <section>
           <h3>Experience & Projects</h3>
           <article>
@@ -107,18 +61,54 @@
           <article>
             <h4>Advocacy Poster Series</h4>
             <p>Created accessible layouts promoting gender equality and respect.</p>
-            <h4> 3D Mitsubishi Model</h4>
-            <p> Visualizing and manipulating 3D objects using Python and Matplotlib.</p>
+            <h4>3D Mitsubishi Model</h4>
+            <p>Visualizing and manipulating 3D objects using Python and Matplotlib.</p>
           </article>
         </section>
       </aside>
+
+      <!-- === CONTACT SECTION (RIGHT) === -->
+      <section class="contact-form">
+        <section class="contact-info">
+          <h2>Get in Touch</h2>
+          <p>If you have any questions or want to work together, feel free to contact me. I'm always open to new opportunities and collaborations.</p>
+          <ul>
+            <li>📧 <a href="mailto:mendozachloe@gmail.com">mendozachloe@gmail.com</a></li>
+            <li>📍 Libon, Albay, Philippines</li>
+            <li>👤 Chloe Kieth B. Mendoza</li>
+          </ul>
+        </section>
+
+        <h1>Contact me</h1>
+        <p class="subtitle">The form is styled but non-functional, as required.</p>
+
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Send a message</legend>
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="ENTER YOUR NAME" required />
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="ENTER YOUR EMAIL" required />
+
+            <label for="subject">Subject</label>
+            <input id="subject" name="subject" type="text" placeholder="What is it about?" required />
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="How can I help?" required></textarea>
+
+            <button class="btn" type="submit" disabled aria-disabled="true">Submit (disabled)</button>
+          </fieldset>
+        </form>
+      </section>
+
     </section>
   </main>
 
   <!-- ===== FOOTER ===== -->
   <footer>
     <section class="container">
-      <p>&copy; 2025 CHLOE KIETH B. MENDOZA. All rights reserved. Privacy Policy </p>
+      <p>&copy; 2025 CHLOE KIETH B. MENDOZA. All rights reserved. Privacy Policy</p>
     </section>
   </footer>
 </body>
